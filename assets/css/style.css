@@ -1,0 +1,432 @@
+/*
+ * Fait Attention a bien documenter ton code et bien t'organiser
+ *****************************************************************/
+
+
+/*
+    GLOBAL
+    ******
+    TOUTE LA PAGE** list-style========= none
+    BODY*********** margin============= 0
+                    padding============ 0
+
+    NAV************ color============== #7fff00
+                    backgroud-color==== #8b008b
+            ***********************************
+             rowOriginal====================
+        space-between================== 
+        bdr-red========================
+        ***************************************
+        h1
+        ***************************************
+        ul 
+              *********************************
+            row============================
+        ***************************************
+        li 
+              *********************************
+            item===========================
+        ***************************************
+        a 
+        ***************************************
+        
+    
+
+        
+       
+       
+        
+        
+    
+    HEADER********* backgroud-color==== #b8860b
+
+    FOOTER********* backgroud-color==== #800000
+
+    H1 A H6******** backgroud-color==== #000000
+
+    P************** backgroud-color==== #000000
+
+    A************** backgroud-color==== #000000
+
+    LABEL********** backgroud-color==== #000000
+
+    BUTTON********* backgroud-color==== #000000
+
+    LI************* backgroud-color==== #000000
+
+
+*/
+
+
+/*  GLOBAL
+==================*/
+
+* {
+    list-style: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    color: #7fff00;
+    background-color: #8b008b;
+}
+
+header {
+    background-color: #b8860b;
+}
+
+footer {
+    display: flex;
+    background-color: #800000;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #000000;
+}
+
+p {
+    color: #000000;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+label {
+    color: black;
+    margin-right: 5px;
+    text-align: top;
+    margin: 3px;
+}
+
+button {
+    color: black;
+}
+
+li {
+    color: black;
+}
+
+
+/*  Flex
+==================*/
+
+
+/* petit container histoir d'avoir une armonie sur le site */
+
+.cont {
+    padding: 0 10% 0 10%;
+}
+
+
+/* L'original row */
+
+.rowOriginal {
+    display: flex;
+}
+
+.row {
+    display: flex;
+    text-align: top;
+    justify-content: center;
+    align-items: center;
+}
+
+.row2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.jus-ctnt-center {
+    display: flex;
+    justify-content: center
+}
+
+.align-self-center {
+    display: flex;
+    align-self: center;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*
+    texte centre
+*******************
+*/
+
+
+/* Les text centre n'ont rien à faire dans flex */
+
+.text-centre {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+}
+
+.text-centre h1 {
+    margin-bottom: 0;
+    text-align: center;
+    margin-top: 25%;
+}
+
+.text-centre h2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+
+/*  Navbar
+==================*/
+
+nav>h1 {
+    padding-left: 8px;
+    width: 200px;
+}
+
+
+/*  Header !!
+==================*/
+
+header {
+    display: flex;
+    height: 200px;
+}
+
+header>.welcome {
+    text-align: center;
+    width: 100%;
+}
+
+
+/*  Style
+==================*/
+
+.bdr-red {
+    border: solid 1px #ff0000;
+}
+
+.bdr-brown {
+    border: solid 1px #a52a2a;
+}
+
+.bdr-purple {
+    border: solid 1px #800080;
+    background-color: #dc143c;
+}
+
+.bdr-pink {
+    border: solid 1px #ffc0cb;
+}
+
+.bdr-green {
+    border: solid 1px #008000;
+}
+
+.bdr-blue {
+    border: solid 1px #0000ff;
+    background-color: #7fff00;
+}
+
+.bg-burlywood {
+    background-color: #deb887;
+}
+
+
+/*  Card /Items
+==================*/
+
+.item {
+    padding: 5px;
+    margin: 5px
+}
+
+.card {
+    margin: 60px;
+    width: 25%;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card p {
+    color: black;
+    justify-items: inherit;
+    margin: 10px;
+}
+
+
+/*  FORMULAIRE
+==================*/
+
+form {
+    min-width: 80%;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-around;
+}
+
+.row-form {
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.form-text {
+    margin: 30px;
+    flex-direction: column;
+}
+
+.form-text {
+    margin: 30px;
+    flex-direction: column;
+}
+
+.btn {
+    border-radius: 5px;
+    background-color: #7b68ee;
+}
+
+.group-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.input-full {
+    width: 100%;
+}
+
+
+/*  FOOTER
+==================*/
+
+.contact {
+    width: 33%;
+    flex-direction: column;
+    background-color: #191970;
+}
+
+.contact h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form {
+    display: flex;
+    width: 100%;
+    align-content: space-between;
+    flex-direction: column;
+}
+
+.contact-form ul {
+    display: flex;
+    height: 250px;
+    justify-content: space-between;
+    flex-direction: column;
+    align-self: center;
+}
+
+.li2 {
+    order: 2;
+}
+
+.map {
+    width: 33%;
+    background-color: #191970;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.map h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.map-size {
+    display: flex;
+    justify-content: center;
+}
+
+.map p {
+    display: flex;
+    justify-content: center;
+}
+
+.social {
+    width: 33%;
+    background-color: #191970;
+    flex-flow: column;
+    justify-content: space-around;
+}
+
+.social h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.social ul {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width:640px) {
+    header {
+        background-color: cyan
+    }
+    .art-list {
+        display: flex;
+        flex-direction: column;
+    }
+    .art-list>article {
+        width: 80%;
+        height: 80%;
+    }
+    form>.form-group {
+        display: none;
+    }
+    .col {
+        overflow: hidden;
+    }
+    .row2 {
+        flex-direction: column;
+    }
+    .contact {
+        width: auto;
+        margin: 10px;
+    }
+    .map {
+        width: auto;
+        margin: 10px;
+    }
+    .social {
+        width: auto;
+        margin: 10px;
+    }
+}
